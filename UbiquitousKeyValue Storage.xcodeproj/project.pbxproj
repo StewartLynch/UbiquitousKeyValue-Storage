@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB99E8D5272677B4006AE36E /* CodableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D4272677B4006AE36E /* CodableObject.swift */; };
+		BB99E8D7272677D6006AE36E /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D6272677D6006AE36E /* SimpleObject.swift */; };
+		BB99E8D92726780E006AE36E /* TabViewStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D82726780E006AE36E /* TabViewStart.swift */; };
+		BB99E8DC27267861006AE36E /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8DB27267861006AE36E /* Setting.swift */; };
+		BB99E8E527267B7F006AE36E /* DismissToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8E427267B7F006AE36E /* DismissToolbarButton.swift */; };
 		BBC992E92726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */; };
-		BBC992EB2726753400D7C01D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC992EA2726753400D7C01D /* ContentView.swift */; };
 		BBC992ED2726753500D7C01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC992EC2726753500D7C01D /* Assets.xcassets */; };
 		BBC992F02726753500D7C01D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC992EF2726753500D7C01D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB99E8D4272677B4006AE36E /* CodableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableObject.swift; sourceTree = "<group>"; };
+		BB99E8D6272677D6006AE36E /* SimpleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObject.swift; sourceTree = "<group>"; };
+		BB99E8D82726780E006AE36E /* TabViewStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStart.swift; sourceTree = "<group>"; };
+		BB99E8DB27267861006AE36E /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		BB99E8E427267B7F006AE36E /* DismissToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissToolbarButton.swift; sourceTree = "<group>"; };
 		BBC992E52726753400D7C01D /* UbiquitousKeyValue Storage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UbiquitousKeyValue Storage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiquitousKeyValue_StorageApp.swift; sourceTree = "<group>"; };
-		BBC992EA2726753400D7C01D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBC992EC2726753500D7C01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC992EF2726753500D7C01D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBC992F62726755B00D7C01D /* UbiquitousKeyValue-Storage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "UbiquitousKeyValue-Storage-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB99E8DA27267829006AE36E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB99E8D82726780E006AE36E /* TabViewStart.swift */,
+				BB99E8D6272677D6006AE36E /* SimpleObject.swift */,
+				BB99E8D4272677B4006AE36E /* CodableObject.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB99E8DD27267880006AE36E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB99E8DB27267861006AE36E /* Setting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB99E8E627267B8D006AE36E /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				BB99E8E427267B7F006AE36E /* DismissToolbarButton.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		BBC992DC2726753400D7C01D = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +86,11 @@
 		BBC992E72726753400D7C01D /* UbiquitousKeyValue Storage */ = {
 			isa = PBXGroup;
 			children = (
+				BBC992F62726755B00D7C01D /* UbiquitousKeyValue-Storage-Info.plist */,
+				BB99E8DA27267829006AE36E /* Views */,
+				BB99E8DD27267880006AE36E /* Models */,
 				BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */,
-				BBC992EA2726753400D7C01D /* ContentView.swift */,
+				BB99E8E627267B8D006AE36E /* ViewModifiers */,
 				BBC992EC2726753500D7C01D /* Assets.xcassets */,
 				BBC992EE2726753500D7C01D /* Preview Content */,
 			);
@@ -137,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC992EB2726753400D7C01D /* ContentView.swift in Sources */,
+				BB99E8DC27267861006AE36E /* Setting.swift in Sources */,
 				BBC992E92726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift in Sources */,
+				BB99E8E527267B7F006AE36E /* DismissToolbarButton.swift in Sources */,
+				BB99E8D92726780E006AE36E /* TabViewStart.swift in Sources */,
+				BB99E8D7272677D6006AE36E /* SimpleObject.swift in Sources */,
+				BB99E8D5272677B4006AE36E /* CodableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +314,9 @@
 				DEVELOPMENT_TEAM = RKV4UP49S6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UbiquitousKeyValue-Storage-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +343,9 @@
 				DEVELOPMENT_TEAM = RKV4UP49S6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "UbiquitousKeyValue-Storage-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

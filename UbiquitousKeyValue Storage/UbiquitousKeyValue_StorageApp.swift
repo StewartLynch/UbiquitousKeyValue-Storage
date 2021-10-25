@@ -11,7 +11,7 @@ import SwiftUI
 struct UbiquitousKeyValue_StorageApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabViewStart()
         }
     }
 }
