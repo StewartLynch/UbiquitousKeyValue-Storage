@@ -10,16 +10,19 @@ import SwiftUI
 struct TabViewStart: View {
     
     var body: some View {
-        TabView {
-            SimpleObject()
-                .tabItem{
-                    Label("Simple Object",systemImage: "1.circle.fill")
-                }
-            CodableObject()
-                .tabItem{
-                    Label("Codable Object",systemImage: "2.circle.fill")
-                }
+        NavigationView {
+            TabView {
+                SimpleObject()
+                    .tabItem{
+                        Label("Simple Object",systemImage: "1.circle.fill")
+                    }
+                CodableObject()
+                    .tabItem{
+                        Label("Codable Object",systemImage: "2.circle.fill")
+                    }
+            }
         }
+        .navigationViewStyle(.stack)
     }
 }
 

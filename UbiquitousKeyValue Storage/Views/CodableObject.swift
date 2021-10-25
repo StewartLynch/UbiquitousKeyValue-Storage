@@ -12,7 +12,6 @@ struct CodableObject: View {
     @State private var fullName = ""
     @FocusState var focusedField: Bool?
     var body: some View {
-        NavigationView {
             VStack {
                 HStack {
                     Text(fullName).padding(7)
@@ -47,8 +46,6 @@ struct CodableObject: View {
             .padding(.vertical)
             .navigationTitle("Codable Object")
             .dismissToolbarButton(focusedField: _focusedField)
-        }
-        .navigationViewStyle(.stack)
     }
 }
 

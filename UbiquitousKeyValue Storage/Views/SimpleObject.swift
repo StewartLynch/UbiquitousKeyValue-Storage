@@ -12,7 +12,6 @@ struct SimpleObject: View {
     @State private var newValue = ""
     @FocusState var focusedField: Bool?
     var body: some View {
-        NavigationView {
             VStack {
                 VStack {
                     Text(dataString)
@@ -40,8 +39,6 @@ struct SimpleObject: View {
             .frame(width: 300)
             .navigationTitle("Simple Object")
             .dismissToolbarButton(focusedField: _focusedField)
-        }
-        .navigationViewStyle(.stack)
     }
 }
 
