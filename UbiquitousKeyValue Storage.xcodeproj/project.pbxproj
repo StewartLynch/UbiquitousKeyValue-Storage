@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB312CE42727C46C00F96163 /* UbiquitousStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB312CE32727C46C00F96163 /* UbiquitousStore.swift */; };
 		BB99E8D5272677B4006AE36E /* CodableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D4272677B4006AE36E /* CodableObject.swift */; };
 		BB99E8D7272677D6006AE36E /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D6272677D6006AE36E /* SimpleObject.swift */; };
 		BB99E8D92726780E006AE36E /* TabViewStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D82726780E006AE36E /* TabViewStart.swift */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB312CE22727BF6D00F96163 /* UbiquitousKeyValue Storage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UbiquitousKeyValue Storage.entitlements"; sourceTree = "<group>"; };
+		BB312CE32727C46C00F96163 /* UbiquitousStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiquitousStore.swift; sourceTree = "<group>"; };
 		BB99E8D4272677B4006AE36E /* CodableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableObject.swift; sourceTree = "<group>"; };
 		BB99E8D6272677D6006AE36E /* SimpleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObject.swift; sourceTree = "<group>"; };
 		BB99E8D82726780E006AE36E /* TabViewStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStart.swift; sourceTree = "<group>"; };
@@ -86,10 +89,12 @@
 		BBC992E72726753400D7C01D /* UbiquitousKeyValue Storage */ = {
 			isa = PBXGroup;
 			children = (
+				BB312CE22727BF6D00F96163 /* UbiquitousKeyValue Storage.entitlements */,
 				BBC992F62726755B00D7C01D /* UbiquitousKeyValue-Storage-Info.plist */,
-				BB99E8DA27267829006AE36E /* Views */,
-				BB99E8DD27267880006AE36E /* Models */,
 				BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */,
+				BB312CE32727C46C00F96163 /* UbiquitousStore.swift */,
+				BB99E8DD27267880006AE36E /* Models */,
+				BB99E8DA27267829006AE36E /* Views */,
 				BB99E8E627267B8D006AE36E /* ViewModifiers */,
 				BBC992EC2726753500D7C01D /* Assets.xcassets */,
 				BBC992EE2726753500D7C01D /* Preview Content */,
@@ -178,6 +183,7 @@
 				BB99E8DC27267861006AE36E /* Setting.swift in Sources */,
 				BBC992E92726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift in Sources */,
 				BB99E8E527267B7F006AE36E /* DismissToolbarButton.swift in Sources */,
+				BB312CE42727C46C00F96163 /* UbiquitousStore.swift in Sources */,
 				BB99E8D92726780E006AE36E /* TabViewStart.swift in Sources */,
 				BB99E8D7272677D6006AE36E /* SimpleObject.swift in Sources */,
 				BB99E8D5272677B4006AE36E /* CodableObject.swift in Sources */,
@@ -308,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UbiquitousKeyValue Storage/UbiquitousKeyValue Storage.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UbiquitousKeyValue Storage/Preview Content\"";
@@ -337,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UbiquitousKeyValue Storage/UbiquitousKeyValue Storage.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UbiquitousKeyValue Storage/Preview Content\"";

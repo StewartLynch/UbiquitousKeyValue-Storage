@@ -11,6 +11,7 @@ struct CodableObject: View {
     @State private var newSettings = Settings()
     @State private var fullName = ""
     @FocusState var focusedField: Bool?
+    @Binding var receiveNotification: Bool
     var body: some View {
             VStack {
                 HStack {
@@ -18,7 +19,8 @@ struct CodableObject: View {
                         .frame(width: 125)
                         .overlay(RoundedRectangle(cornerRadius: 5,style: .continuous).stroke(Color(.secondarySystemBackground)))
                     Button {
-                        // Load stored settingds
+                        // Load stored settings
+                        fullName = NSUbiquitousKeyValueStore.settings.fullName
                     } label: {
                         Text("Retrieve Settings")
                     }
@@ -33,6 +35,7 @@ struct CodableObject: View {
                     .textFieldStyle(.roundedBorder)
                 Button {
                     // Save updated settings
+                    NSUbiquitousKeyValueStore.settings = newSettings
                     newSettings = Settings()
                     focusedField = nil
                 } label: {
@@ -46,11 +49,23 @@ struct CodableObject: View {
             .padding(.vertical)
             .navigationTitle("Codable Object")
             .dismissToolbarButton(focusedField: _focusedField)
+            .onChange(of: receiveNotification) { newValue in
+                if newValue {
+                    fullName = NSUbiquitousKeyValueStore.settings.fullName
+                    receiveNotification = false
+                }
+            }
+            .onAppear {
+                fullName = NSUbiquitousKeyValueStore.settings.fullName
+            }
     }
 }
 
 struct CodableObject_Previews: PreviewProvider {
     static var previews: some View {
-        CodableObject()
+        NavigationView {
+            CodableObject(receiveNotification: .constant(false))
+        }
+        .navigationViewStyle(.stack)
     }
 }
