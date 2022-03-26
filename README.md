@@ -1,4 +1,4 @@
-# NSUbiquirousKeyValueStore or iCloud Shared UserDefaults
+# NSUbiquitousKeyValueStore or iCloud Shared UserDefaults
 
 This is the completed Project for the YouTube video of the same name
 
