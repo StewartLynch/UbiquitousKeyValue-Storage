@@ -1,10 +1,13 @@
-# NSUbiquirousKeyValueStore or iCloud Shared UserDefaults
+# NSUbiquitousKeyValueStore or iCloud Shared UserDefaults
 
-This is the completed Project for the YouTube video of the same name
+This is an updated version of the project for iOS 18.
 
-The starter project and video is available in the notes for the video.
+Updates include
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=wmxwWkVWO1Y
-" target="_blank"><img src="http://img.youtube.com/vi/wmxwWkVWO1Y/0.jpg" 
-alt="NSUbiquirousKeyValueStore or iCloud Shared UserDefaults" width="480" height="360" border="10" /></a>
+* New TabView
+* A KeyValueStoreObserver class that is injected into the environment
+* Relocation of the FocusState to the TabView to prevent duplication dismiss buttons on the keyboard
+* Uses Observation Framework rather than an ObservableObject
+* Updated previews to new Preview macro
+* Updated NavigationView to NavigationStack
 
