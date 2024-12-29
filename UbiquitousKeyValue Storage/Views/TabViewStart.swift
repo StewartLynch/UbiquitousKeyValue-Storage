@@ -8,33 +8,25 @@
 import SwiftUI
 
 struct TabViewStart: View {
-    let pub = NotificationCenter.default.publisher(for: NSUbiquitousKeyValueStore.didChangeExternallyNotification, object: nil)
-        .receive(on: RunLoop.main)
-    @State private var receiveNotification = false
+    @FocusState var focusedField: Bool?
+    @State private var selectedTab = 0
     var body: some View {
-        NavigationView {
-            TabView {
-                SimpleObject(receiveNotification: $receiveNotification)
-                    .tabItem{
-                        Label("Simple Object",systemImage: "1.circle.fill")
-                    }
-                CodableObject(receiveNotification: $receiveNotification)
-                    .tabItem{
-                        Label("Codable Object",systemImage: "2.circle.fill")
-                    }
+        NavigationStack {
+            TabView(selection: $selectedTab) {
+                Tab("Simple Object", systemImage: "1.circle.fill", value: 0) {
+                    SimpleObject(focusedField: _focusedField)
+                }
+                Tab("Codable Object", systemImage: "2.circle.fill", value: 1) {
+                    CodableObject(focusedField: _focusedField)
+                }
             }
+            .navigationTitle(selectedTab == 0 ? "Simple Object" :  "Codable Object")
         }
-        .onReceive(pub, perform: { pub in
-            if pub.name == NSUbiquitousKeyValueStore.didChangeExternallyNotification {
-                receiveNotification = true
-            }
-        })
-        .navigationViewStyle(.stack)
+        
     }
 }
 
-struct TabViewStart_Previews: PreviewProvider {
-    static var previews: some View {
-        TabViewStart()
-    }
+#Preview {
+    TabViewStart()
+        .environment(KeyValueStoreObserver())
 }

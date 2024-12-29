@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BB312CE42727C46C00F96163 /* UbiquitousStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB312CE32727C46C00F96163 /* UbiquitousStore.swift */; };
+		BB5BB4362D221235006840B6 /* KeyValueStoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5BB4352D221235006840B6 /* KeyValueStoreObserver.swift */; };
 		BB99E8D5272677B4006AE36E /* CodableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D4272677B4006AE36E /* CodableObject.swift */; };
 		BB99E8D7272677D6006AE36E /* SimpleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D6272677D6006AE36E /* SimpleObject.swift */; };
 		BB99E8D92726780E006AE36E /* TabViewStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8D82726780E006AE36E /* TabViewStart.swift */; };
 		BB99E8DC27267861006AE36E /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8DB27267861006AE36E /* Setting.swift */; };
-		BB99E8E527267B7F006AE36E /* DismissToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99E8E427267B7F006AE36E /* DismissToolbarButton.swift */; };
 		BBC992E92726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */; };
 		BBC992ED2726753500D7C01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC992EC2726753500D7C01D /* Assets.xcassets */; };
 		BBC992F02726753500D7C01D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC992EF2726753500D7C01D /* Preview Assets.xcassets */; };
@@ -21,11 +21,11 @@
 /* Begin PBXFileReference section */
 		BB312CE22727BF6D00F96163 /* UbiquitousKeyValue Storage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UbiquitousKeyValue Storage.entitlements"; sourceTree = "<group>"; };
 		BB312CE32727C46C00F96163 /* UbiquitousStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiquitousStore.swift; sourceTree = "<group>"; };
+		BB5BB4352D221235006840B6 /* KeyValueStoreObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStoreObserver.swift; sourceTree = "<group>"; };
 		BB99E8D4272677B4006AE36E /* CodableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableObject.swift; sourceTree = "<group>"; };
 		BB99E8D6272677D6006AE36E /* SimpleObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleObject.swift; sourceTree = "<group>"; };
 		BB99E8D82726780E006AE36E /* TabViewStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStart.swift; sourceTree = "<group>"; };
 		BB99E8DB27267861006AE36E /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-		BB99E8E427267B7F006AE36E /* DismissToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissToolbarButton.swift; sourceTree = "<group>"; };
 		BBC992E52726753400D7C01D /* UbiquitousKeyValue Storage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UbiquitousKeyValue Storage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbiquitousKeyValue_StorageApp.swift; sourceTree = "<group>"; };
 		BBC992EC2726753500D7C01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,14 +62,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		BB99E8E627267B8D006AE36E /* ViewModifiers */ = {
-			isa = PBXGroup;
-			children = (
-				BB99E8E427267B7F006AE36E /* DismissToolbarButton.swift */,
-			);
-			path = ViewModifiers;
-			sourceTree = "<group>";
-		};
 		BBC992DC2726753400D7C01D = {
 			isa = PBXGroup;
 			children = (
@@ -91,12 +83,12 @@
 			children = (
 				BB312CE22727BF6D00F96163 /* UbiquitousKeyValue Storage.entitlements */,
 				BBC992F62726755B00D7C01D /* UbiquitousKeyValue-Storage-Info.plist */,
-				BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */,
 				BB312CE32727C46C00F96163 /* UbiquitousStore.swift */,
+				BB5BB4352D221235006840B6 /* KeyValueStoreObserver.swift */,
 				BB99E8DD27267880006AE36E /* Models */,
 				BB99E8DA27267829006AE36E /* Views */,
-				BB99E8E627267B8D006AE36E /* ViewModifiers */,
 				BBC992EC2726753500D7C01D /* Assets.xcassets */,
+				BBC992E82726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift */,
 				BBC992EE2726753500D7C01D /* Preview Content */,
 			);
 			path = "UbiquitousKeyValue Storage";
@@ -138,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					BBC992E42726753400D7C01D = {
 						CreatedOnToolsVersion = 13.1;
@@ -181,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB99E8DC27267861006AE36E /* Setting.swift in Sources */,
+				BB5BB4362D221235006840B6 /* KeyValueStoreObserver.swift in Sources */,
 				BBC992E92726753400D7C01D /* UbiquitousKeyValue_StorageApp.swift in Sources */,
-				BB99E8E527267B7F006AE36E /* DismissToolbarButton.swift in Sources */,
 				BB312CE42727C46C00F96163 /* UbiquitousStore.swift in Sources */,
 				BB99E8D92726780E006AE36E /* TabViewStart.swift in Sources */,
 				BB99E8D7272677D6006AE36E /* SimpleObject.swift in Sources */,
@@ -230,6 +222,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -291,6 +284,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -326,6 +320,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +351,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

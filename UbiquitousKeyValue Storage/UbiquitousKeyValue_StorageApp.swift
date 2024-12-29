@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct UbiquitousKeyValue_StorageApp: App {
+    @State private var storeObserver = KeyValueStoreObserver()
     var body: some Scene {
         WindowGroup {
             TabViewStart()
+                .environment(storeObserver)
         }
     }
 }
